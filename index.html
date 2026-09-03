@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Quiz Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Timer Display -->
+    <div class="timer" id="timerDisplay" style="display: none;">
+        ⏰ <span id="timerText">30:00</span>
+    </div>
+
+    <!-- Fullscreen Warning Overlay (hidden by default) -->
+    <div id="fullscreenWarning" class="fullscreen-warning" style="display: none;">
+        ⚠️ Please return to fullscreen mode to continue the quiz!
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div id="adminModal" class="modal">
+        <div class="modal-content">
+            <h2>Admin Login</h2>
+            <input type="password" id="adminPasscode" class="form-input" placeholder="Enter passcode">
+            <button class="btn" onclick="adminLogin()" style="margin-top: 15px;">Login</button>
+            <button class="btn" onclick="closeAdminModal()" style="margin-top: 10px; background: #666;">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container" id="app">
+        <!-- Header -->
+        <div class="header">
+            <h1>🎯 Digital Marketing Quiz Challenge</h1>
+            <p>Test your knowledge and compete with other teams!</p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="nav-tabs">
+            <a href="#" class="nav-tab active" onclick="showTab('home')">Home</a>
+            <a href="#" class="nav-tab" onclick="showTab('register')">Register</a>
+            <a href="#" class="nav-tab" onclick="showTab('quiz')">Quiz</a>
+            <a href="#" class="nav-tab" onclick="openAdminModal()">Admin Panel</a>
+        </div>
+
+        <!-- Content Sections -->
+        <div id="homeSection">
+            <!-- Home content (same as original) -->
+        </div>
+
+        <div id="registerSection" style="display: none;">
+            <!-- Registration form (same as original) -->
+        </div>
+
+        <div id="quizSection" style="display: none;">
+            <!-- Quiz interface (same as original) -->
+        </div>
+
+        <div id="adminSection" style="display: none;">
+            <!-- Admin panel (same as original) -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
